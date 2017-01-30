@@ -1,0 +1,215 @@
+
+############### Execution #################
+[cloudera@quickstart workspace]$ hadoop jar nyse.jar input/NYSE/NYSE_daily_prices input/NYSE/NYSE_daily_dividends file:///home/cloudera/datasets/NYSE/companies/NYSESymbolCompany output/nyse002 /t
+17/01/29 16:44:05 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/01/29 16:44:07 INFO input.FileInputFormat: Total input paths to process : 1
+17/01/29 16:44:07 INFO input.FileInputFormat: Total input paths to process : 1
+17/01/29 16:44:07 INFO mapreduce.JobSubmitter: number of splits:5
+17/01/29 16:44:08 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1437012704458_0029
+17/01/29 16:44:08 INFO impl.YarnClientImpl: Submitted application application_1437012704458_0029
+17/01/29 16:44:08 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1437012704458_0029/
+17/01/29 16:44:08 INFO mapreduce.Job: Running job: job_1437012704458_0029
+17/01/29 16:44:18 INFO mapreduce.Job: Job job_1437012704458_0029 running in uber mode : false
+17/01/29 16:44:18 INFO mapreduce.Job:  map 0% reduce 0%
+17/01/29 16:44:55 INFO mapreduce.Job:  map 1% reduce 0%
+17/01/29 16:44:58 INFO mapreduce.Job:  map 3% reduce 0%
+17/01/29 16:45:01 INFO mapreduce.Job:  map 11% reduce 0%
+17/01/29 16:45:03 INFO mapreduce.Job:  map 12% reduce 0%
+17/01/29 16:45:04 INFO mapreduce.Job:  map 14% reduce 0%
+17/01/29 16:45:05 INFO mapreduce.Job:  map 19% reduce 0%
+17/01/29 16:45:06 INFO mapreduce.Job:  map 27% reduce 0%
+17/01/29 16:45:07 INFO mapreduce.Job:  map 29% reduce 0%
+17/01/29 16:45:09 INFO mapreduce.Job:  map 30% reduce 0%
+17/01/29 16:45:10 INFO mapreduce.Job:  map 32% reduce 0%
+17/01/29 16:45:12 INFO mapreduce.Job:  map 33% reduce 0%
+17/01/29 16:45:13 INFO mapreduce.Job:  map 34% reduce 0%
+17/01/29 16:45:14 INFO mapreduce.Job:  map 35% reduce 0%
+17/01/29 16:45:16 INFO mapreduce.Job:  map 36% reduce 0%
+17/01/29 16:45:17 INFO mapreduce.Job:  map 37% reduce 0%
+17/01/29 16:45:20 INFO mapreduce.Job:  map 38% reduce 0%
+17/01/29 16:45:23 INFO mapreduce.Job:  map 39% reduce 0%
+17/01/29 16:45:25 INFO mapreduce.Job:  map 40% reduce 0%
+17/01/29 16:45:27 INFO mapreduce.Job:  map 41% reduce 0%
+17/01/29 16:45:31 INFO mapreduce.Job:  map 42% reduce 0%
+17/01/29 16:45:38 INFO mapreduce.Job:  map 42% reduce 7%
+17/01/29 16:45:43 INFO mapreduce.Job:  map 43% reduce 7%
+17/01/29 16:45:46 INFO mapreduce.Job:  map 45% reduce 7%
+17/01/29 16:45:48 INFO mapreduce.Job:  map 46% reduce 7%
+17/01/29 16:45:49 INFO mapreduce.Job:  map 48% reduce 7%
+17/01/29 16:45:50 INFO mapreduce.Job:  map 49% reduce 7%
+17/01/29 16:45:51 INFO mapreduce.Job:  map 50% reduce 7%
+17/01/29 16:45:52 INFO mapreduce.Job:  map 51% reduce 7%
+17/01/29 16:45:53 INFO mapreduce.Job:  map 52% reduce 7%
+17/01/29 16:45:54 INFO mapreduce.Job:  map 53% reduce 7%
+17/01/29 16:45:55 INFO mapreduce.Job:  map 54% reduce 7%
+17/01/29 16:45:56 INFO mapreduce.Job:  map 55% reduce 7%
+17/01/29 16:45:58 INFO mapreduce.Job:  map 56% reduce 7%
+17/01/29 16:45:59 INFO mapreduce.Job:  map 57% reduce 7%
+17/01/29 16:46:02 INFO mapreduce.Job:  map 58% reduce 7%
+17/01/29 16:46:04 INFO mapreduce.Job:  map 59% reduce 7%
+17/01/29 16:46:18 INFO mapreduce.Job:  map 60% reduce 7%
+17/01/29 16:46:21 INFO mapreduce.Job:  map 63% reduce 7%
+17/01/29 16:46:24 INFO mapreduce.Job:  map 67% reduce 7%
+17/01/29 16:46:27 INFO mapreduce.Job:  map 69% reduce 7%
+17/01/29 16:46:30 INFO mapreduce.Job:  map 71% reduce 7%
+17/01/29 16:46:33 INFO mapreduce.Job:  map 72% reduce 7%
+17/01/29 16:46:36 INFO mapreduce.Job:  map 73% reduce 7%
+17/01/29 16:46:40 INFO mapreduce.Job:  map 74% reduce 7%
+17/01/29 16:46:43 INFO mapreduce.Job:  map 75% reduce 7%
+17/01/29 16:46:50 INFO mapreduce.Job:  map 76% reduce 7%
+17/01/29 16:46:57 INFO mapreduce.Job:  map 77% reduce 7%
+17/01/29 16:47:03 INFO mapreduce.Job:  map 80% reduce 7%
+17/01/29 16:47:09 INFO mapreduce.Job:  map 81% reduce 7%
+17/01/29 16:47:14 INFO mapreduce.Job:  map 82% reduce 7%
+17/01/29 16:47:18 INFO mapreduce.Job:  map 83% reduce 7%
+17/01/29 16:47:21 INFO mapreduce.Job:  map 85% reduce 7%
+17/01/29 16:47:34 INFO mapreduce.Job:  map 86% reduce 7%
+17/01/29 16:47:37 INFO mapreduce.Job:  map 88% reduce 7%
+17/01/29 16:47:40 INFO mapreduce.Job:  map 89% reduce 7%
+17/01/29 16:47:46 INFO mapreduce.Job:  map 90% reduce 7%
+17/01/29 16:47:53 INFO mapreduce.Job:  map 91% reduce 7%
+17/01/29 16:47:56 INFO mapreduce.Job:  map 92% reduce 7%
+17/01/29 16:48:09 INFO mapreduce.Job:  map 93% reduce 7%
+17/01/29 16:48:19 INFO mapreduce.Job:  map 94% reduce 7%
+17/01/29 16:48:21 INFO mapreduce.Job:  map 96% reduce 7%
+17/01/29 16:48:25 INFO mapreduce.Job:  map 97% reduce 7%
+17/01/29 16:48:28 INFO mapreduce.Job:  map 98% reduce 7%
+17/01/29 16:48:40 INFO mapreduce.Job:  map 99% reduce 13%
+17/01/29 16:48:43 INFO mapreduce.Job:  map 100% reduce 13%
+17/01/29 16:49:21 INFO mapreduce.Job:  map 100% reduce 20%
+17/01/29 16:49:54 INFO mapreduce.Job:  map 100% reduce 27%
+17/01/29 16:50:00 INFO mapreduce.Job:  map 100% reduce 67%
+17/01/29 16:50:19 INFO mapreduce.Job:  map 100% reduce 82%
+17/01/29 16:50:27 INFO mapreduce.Job:  map 100% reduce 85%
+17/01/29 16:50:31 INFO mapreduce.Job:  map 100% reduce 86%
+17/01/29 16:50:37 INFO mapreduce.Job:  map 100% reduce 94%
+17/01/29 16:50:40 INFO mapreduce.Job:  map 100% reduce 99%
+17/01/29 16:50:43 INFO mapreduce.Job:  map 100% reduce 100%
+17/01/29 16:50:54 INFO mapreduce.Job: Job job_1437012704458_0029 completed successfully
+17/01/29 16:50:54 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=1815625508
+		FILE: Number of bytes written=2737806589
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=514516708
+		HDFS: Number of bytes written=10122908
+		HDFS: Number of read operations=18
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=51
+	Job Counters 
+		Killed map tasks=2
+		Launched map tasks=7
+		Launched reduce tasks=1
+		Data-local map tasks=7
+		Total time spent by all maps in occupied slots (ms)=1282288
+		Total time spent by all reduces in occupied slots (ms)=344486
+		Total time spent by all map tasks (ms)=1282288
+		Total time spent by all reduce tasks (ms)=344486
+		Total vcore-seconds taken by all map tasks=1282288
+		Total vcore-seconds taken by all reduce tasks=344486
+		Total megabyte-seconds taken by all map tasks=1313062912
+		Total megabyte-seconds taken by all reduce tasks=352753664
+	Map-Reduce Framework
+		Map input records=9343811
+		Map output records=9343759
+		Map output bytes=895819006
+		Map output materialized bytes=914506554
+		Input split bytes=1430
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=40679
+		Reduce shuffle bytes=914506554
+		Reduce input records=9343759
+		Reduce output records=40679
+		Spilled Records=27898549
+		Shuffled Maps =5
+		Failed Shuffles=0
+		Merged Map outputs=5
+		GC time elapsed (ms)=5740
+		CPU time spent (ms)=140150
+		Physical memory (bytes) snapshot=1289854976
+		Virtual memory (bytes) snapshot=5125201920
+		Total committed heap usage (bytes)=854786048
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+
+########### Output Path, files ####
+[cloudera@quickstart workspace]$ hadoop fs -ls output/nyse002
+Found 51 items
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1962
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1963
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1964
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1965
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1966
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1967
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1968
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1969
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1970
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1971
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1972
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1973
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1974
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1975
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1976
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1977
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1978
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1979
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1980
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1981
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1982
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1983
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1984
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1985
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1986
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1987
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1988
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1989
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1990
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1991
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1992
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1993
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1994
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1995
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1996
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1997
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1998
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/1999
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2000
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2001
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2002
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2003
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2004
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2005
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2006
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2007
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2008
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2009
+drwxr-xr-x   - cloudera cloudera          0 2017-01-29 16:50 output/nyse002/2010
+-rw-r--r--   1 cloudera cloudera          0 2017-01-29 16:50 output/nyse002/_SUCCESS
+-rw-r--r--   1 cloudera cloudera    5061454 2017-01-29 16:50 output/nyse002/part-r-00000
+
+############ output file sample ##########
+[cloudera@quickstart workspace]$ hadoop fs -cat output/nyse002/1962/p*
+stock_symbol=AA, stock_year=1962,	companyName=ALCOA,maxStockPrice=68.5,minStockPrice=45.0,avgDividend=0.0125
+stock_symbol=BA, stock_year=1962,	companyName=BOEING,maxStockPrice=56.63,minStockPrice=35.13,avgDividend=0.00823
+stock_symbol=CAT, stock_year=1962,	companyName=CATERPILLAR,maxStockPrice=42.5,minStockPrice=29.5,avgDividend=0.02083
+stock_symbol=DD, stock_year=1962,	companyName=DU PONT DE NEMOURS E I,maxStockPrice=254.75,minStockPrice=164.5,avgDividend=0.100006
+stock_symbol=DIS, stock_year=1962,	companyName=WALT DISNEY,maxStockPrice=40.63,minStockPrice=21.0,avgDividend=2.6E-4
+stock_symbol=EK, stock_year=1962,	companyName=EASTMAN KODAK,maxStockPrice=115.87,minStockPrice=85.0,avgDividend=0.0680525
+stock_symbol=GE, stock_year=1962,	companyName=GENERAL ELECTRIC,maxStockPrice=78.5,minStockPrice=54.25,avgDividend=0.00521
+stock_symbol=HPQ, stock_year=1962,	companyName=HEWLETT-PACKARD,maxStockPrice=37.0,minStockPrice=15.25,avgDividend=NaN
+stock_symbol=IBM, stock_year=1962,	companyName=INTL BUSINESS MACHINES,maxStockPrice=578.5,minStockPrice=300.0,avgDividend=0.001
+stock_symbol=KO, stock_year=1962,	companyName=COCA-COLA,maxStockPrice=103.75,minStockPrice=70.0,avgDividend=0.0125
+[cloudera@quickstart workspace]$ 
+
