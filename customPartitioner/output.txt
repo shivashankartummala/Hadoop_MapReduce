@@ -1,0 +1,86 @@
+[cloudera@quickstart workspace]$ hadoop jar partition.jar input/custompartitioner_input_data.txt output/partition001
+17/01/31 21:21:49 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/01/31 21:21:49 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/01/31 21:21:50 INFO input.FileInputFormat: Total input paths to process : 1
+17/01/31 21:21:50 INFO mapreduce.JobSubmitter: number of splits:1
+17/01/31 21:21:50 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1437012704458_0030
+17/01/31 21:21:50 INFO impl.YarnClientImpl: Submitted application application_1437012704458_0030
+17/01/31 21:21:50 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1437012704458_0030/
+17/01/31 21:21:50 INFO mapreduce.Job: Running job: job_1437012704458_0030
+17/01/31 21:22:00 INFO mapreduce.Job: Job job_1437012704458_0030 running in uber mode : false
+17/01/31 21:22:00 INFO mapreduce.Job:  map 0% reduce 0%
+17/01/31 21:22:08 INFO mapreduce.Job:  map 100% reduce 0%
+17/01/31 21:22:26 INFO mapreduce.Job:  map 100% reduce 33%
+17/01/31 21:22:28 INFO mapreduce.Job:  map 100% reduce 67%
+17/01/31 21:22:30 INFO mapreduce.Job:  map 100% reduce 100%
+17/01/31 21:22:30 INFO mapreduce.Job: Job job_1437012704458_0030 completed successfully
+17/01/31 21:22:30 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=575
+		FILE: Number of bytes written=416025
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=678
+		HDFS: Number of bytes written=173
+		HDFS: Number of read operations=12
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=6
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=3
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=5065
+		Total time spent by all reduces in occupied slots (ms)=50423
+		Total time spent by all map tasks (ms)=5065
+		Total time spent by all reduce tasks (ms)=50423
+		Total vcore-seconds taken by all map tasks=5065
+		Total vcore-seconds taken by all reduce tasks=50423
+		Total megabyte-seconds taken by all map tasks=5186560
+		Total megabyte-seconds taken by all reduce tasks=51633152
+	Map-Reduce Framework
+		Map input records=28
+		Map output records=28
+		Map output bytes=501
+		Map output materialized bytes=575
+		Input split bytes=149
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=575
+		Reduce input records=28
+		Reduce output records=6
+		Spilled Records=56
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=513
+		CPU time spent (ms)=3880
+		Physical memory (bytes) snapshot=592207872
+		Virtual memory (bytes) snapshot=3398537216
+		Total committed heap usage (bytes)=341245952
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=529
+	File Output Format Counters 
+		Bytes Written=173
+    
+[cloudera@quickstart workspace]$ hadoop fs -ls output/partition001/*
+-rw-r--r--   1 cloudera cloudera          0 2017-01-31 21:22 output/partition001/_SUCCESS
+-rw-r--r--   1 cloudera cloudera         57 2017-01-31 21:22 output/partition001/part-r-00000
+-rw-r--r--   1 cloudera cloudera         59 2017-01-31 21:22 output/partition001/part-r-00001
+-rw-r--r--   1 cloudera cloudera         57 2017-01-31 21:22 output/partition001/part-r-00002
+    
+[cloudera@quickstart workspace]$ hadoop fs -cat output/partition001/*
+Nathan	age- 17	female	score-99
+Adam	age- 9	male	score-37
+Kristine	age- 38	female	score-53
+Bob	age- 34	male	score-89
+Mony	age- 57	female	score-96
+Chris	age- 67	male	score-97
