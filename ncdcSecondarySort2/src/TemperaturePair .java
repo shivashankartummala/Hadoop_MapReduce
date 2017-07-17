@@ -11,14 +11,16 @@ import java.io.IOException;
 public class TemperaturePair implements Writable, WritableComparable<TemperaturePair> {
 
     private Text yearMonth = new Text();
+    private Text day = new Text();
     private IntWritable temperature = new IntWritable();
 
 
     public TemperaturePair() {
     }
 
-    public TemperaturePair(String ym, int temp) {
+    public TemperaturePair(String ym, int temp, String dy) {
         yearMonth.set(ym);
+        day.set(dy);
         temperature.set(temp);
     }
 
@@ -31,12 +33,14 @@ public class TemperaturePair implements Writable, WritableComparable<Temperature
     @Override
     public void write(DataOutput out) throws IOException {
         yearMonth.write(out);
+        day.write(out);
         temperature.write(out);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
         yearMonth.readFields(in);
+        day.readFields(in);
         temperature.readFields(in);
     }
 
@@ -52,6 +56,10 @@ public class TemperaturePair implements Writable, WritableComparable<Temperature
     public Text getYearMonth() {
         return yearMonth;
     }
+    
+     public Text getDay() {
+        return day;
+    }
 
     public IntWritable getTemperature() {
         return temperature;
@@ -59,6 +67,10 @@ public class TemperaturePair implements Writable, WritableComparable<Temperature
 
     public void setYearMonth(String yearMonthStr) {
         yearMonth.set(yearMonthStr);
+    }
+    
+    public void setDay(String dy) {
+        day.set(dy);
     }
 
     public void setTemperature(int temp) {
