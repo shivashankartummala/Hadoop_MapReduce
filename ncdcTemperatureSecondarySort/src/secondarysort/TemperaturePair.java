@@ -9,11 +9,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-/**
- * User: Bill Bejeck
- * Date: 1/7/13
- * Time: 11:03 PM
- */
+
 public class TemperaturePair implements Writable, WritableComparable<TemperaturePair> {
 
     private Text yearMonth = new Text();
