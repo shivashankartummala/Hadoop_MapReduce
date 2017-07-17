@@ -13,18 +13,20 @@ public class SecondarySortingTemperatureMapper extends Mapper<LongWritable, Text
 @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String line = value.toString();
-        String yearMonth = line.substring(15, 21);
+        String[] tokens = value.split(",");
+        // YYYY = tokens[0]
+        // MM = tokens[1]
+        // DD = tokens[2]
+       // temperature = tokens[3]
+    String yearMonth = tokens[0] + tokens[1];
+    String day = tokens[2];
+    int temperature = Integer.parseInt(tokens[3]);
 
-        int tempStartPosition = 87;
-
-        if (line.charAt(tempStartPosition) == '+') {
-            tempStartPosition += 1;
-        }
-
-        int temp = Integer.parseInt(line.substring(tempStartPosition, 92));
+        
 
         if (temp != MISSING) {
             temperaturePair.setYearMonth(yearMonth);
+             temperaturePair.setDay(day);
             temperaturePair.setTemperature(temp);
             context.write(temperaturePair, nullValue);
         }
